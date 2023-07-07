@@ -1,4 +1,15 @@
-﻿Add-Type -AssemblyName System.Windows.Forms
+# Run as administrator so it can install ImageMagick and create and delete the temp folder
+if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
+    $arguments = "& '" + $myinvocation.mycommand.definition + "'"
+    Start-Process powershell -Verb runAs -ArgumentList $arguments
+    Break
+}
+
+# Check if 'C:\temp' exists
+if (!(Test-Path 'C:\temp')) {
+    New-Item -ItemType Directory -Force -Path 'C:\temp'
+}
+Add-Type -AssemblyName System.Windows.Forms
 
 $imageMagickPath = 'C:\Program Files\ImageMagick\magick.exe'
 
