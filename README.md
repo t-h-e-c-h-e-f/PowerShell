@@ -25,7 +25,7 @@ This is handy for platforms like Stripe, Square, PayPal, or Venmo, where transac
 
 ## ⚙️ Installation
 
-1. Save the script as `FeeCalcUp.ps1`.
+1. Save the script as `FeeCalc.ps1`.
 2. Right-click → **Run with PowerShell**  
    or run from terminal:  
    ```powershell
