@@ -1,4 +1,4 @@
-# 💸 Fee Gross-Up Calculator (PowerShell WPF)
+# 💸 Fee Calculator (PowerShell WPF)
 
 A simple offline Windows PowerShell WPF application that helps you calculate how much to charge your customer so that, after processor fees, you receive the exact amount you need.
 
@@ -25,11 +25,11 @@ This is handy for platforms like Stripe, Square, PayPal, or Venmo, where transac
 
 ## ⚙️ Installation
 
-1. Save the script as `FeeGrossUp.ps1`.
+1. Save the script as `FeeCalcUp.ps1`.
 2. Right-click → **Run with PowerShell**  
    or run from terminal:  
    ```powershell
-   powershell -ExecutionPolicy Bypass -File .\FeeGrossUp.ps1
+   powershell -ExecutionPolicy Bypass -File .\FeeCalc.ps1
    ```
 
 ---
